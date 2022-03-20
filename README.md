@@ -1,2 +1,2 @@
 # aplikasicuti
-website aplikasi cuti karyawan_proyek Sistem Ubsi Karawang
+website aplikasi cuti karyawan_project KP
