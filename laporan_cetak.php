@@ -49,25 +49,20 @@
 </head>
 
 <body>
+
 	<section id="header-kop">
 		<div class="container-fluid">
 			<table class="table table-borderless">
 				<tbody>
 					<tr>
-						<td class="text-left" width="20%">
-							<img src="libs/images/isk-logo.jpg" alt="logo-dkm" width="70" />
-						</td>
-						<td class="text-center" width="60%">
-						<b>PT. ISK INDONESIA</b> <br>
-						Jl. Maligi VII Lot Q-4C, Kawasan Industri KIIC, Sukaluyu, Kabupaten Karawang, Jawa Barat 17520<br>
-						Telp: (021) 89115030<br>
-						<td class="text-right" width="20%">
-							<img src="libs/images/isk.jpg" alt="logo-dkm" width="130" height="70"/>
+						<td class="text-left" width="70%">
+							<img src="libs/images/kop1.png" alt="logo-rs" width="50%" />
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			<hr class="line-top" />
+			<br>
 		</div>
 	</section>
 
@@ -80,11 +75,13 @@
 				<thead>
 					<tr>
 						<th width="1%">No</th>
-						<th width="10%">No Cuti</th>
+						<th width="5%">No Cuti</th>
 						<th width="10%">Nama Pemohon</th>
 						<th width="5%">Tgl Pengajuan</th>
 						<th width="5%">Tgl Awal</th>
 						<th width="5%">Tgl Akhir</th>
+						<th width="5%">Durasi (Hari)</th>
+						<th width="10%">Keterangan</th>
 						<th width="5%">Status</th>
 					</tr>
 				</thead>
@@ -99,6 +96,8 @@
 							echo '<td class="text-center text-nowrap">'. format_tanggal($data['tgl_pengajuan']) .'</td>';
 							echo '<td class="text-center text-nowrap">'. format_tanggal($data['tgl_awal']) .'</td>';
 							echo '<td class="text-center text-nowrap">'. format_tanggal($data['tgl_akhir']) .'</td>';
+							echo '<td>'. $data['durasi'] .'</td>';
+							echo '<td>'. $data['keterangan'] .'</td>';
 							echo '<td>'. $data['stt_cuti'] .'</td>';
 							echo '</tr>';
 							$i++;
