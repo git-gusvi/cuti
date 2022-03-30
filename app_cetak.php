@@ -1,6 +1,5 @@
 <?php
 	include("sess_check.php");
-
 	include("dist/function/format_tanggal.php");
 	include("dist/function/format_rupiah.php");
 	$haries = array("Sunday" => "Minggu", "Monday" => "Senin", "Tuesday" => "Selasa", "Wednesday" => "Rabu", "Thursday" => "Kamis", "Friday" => "Jum'at", "Saturday" => "Sabtu");
@@ -61,13 +60,14 @@
 			<table class="table table-borderless">
 				<tbody>
 					<tr>
-						<td class="text-center" width="100%">
-							<img src="libs/images/kop.jpg" alt="logo-dkm" />
+						<td class="text-left" width="70%">
+							<img src="libs/images/kop1.png" alt="logo-rs" width="50%" />
 						</td>
 					</tr>
 				</tbody>
 			</table>
 			<hr class="line-top" />
+			<br>
 		</div>
 	</section>
 	<section id="body-of-report">
@@ -132,16 +132,17 @@
 
 			<div class="container-fluid">
 			<h3 class="text-right">Pamulang, <?php echo $tanggal." ".$bulan_ini." ".$tahun ?></h3>
-	</div>
+			</div>
 			
-				<img src="foto/ttd.png" alt="ttd" align="right" width="200" height="100"></h4>
-	</div>
+			<img src="foto/ttd.png" alt="ttd" align="right" width="200" height="100"></h4>
+			</div>
+
 			<div class="container-fluid">
 			<h3 class="text-right">Selvidora, S.KM</h3>
-	</div>
+			</div>
 			<div class="container-fluid">
 			<h3 class="text-right">Kabag SDM & Umum</h3>
-	</div>
+		</div>
 
 			<div>
 			<label>*Form ini dicetak oleh sistem dan tidak memerlukan tanda tangan atau pengesahan lain.</label>
