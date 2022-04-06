@@ -3,6 +3,14 @@
 
 	include("dist/function/format_tanggal.php");
 	include("dist/function/format_rupiah.php");
+	$haries = array("Sunday" => "Minggu", "Monday" => "Senin", "Tuesday" => "Selasa", "Wednesday" => "Rabu", "Thursday" => "Kamis", "Friday" => "Jum'at", "Saturday" => "Sabtu");
+	$bulans = array("", "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+	$bulans_count = count($bulans);
+	$hari_ini = $haries[date("l")];
+	$bulan_ini = $bulans[date("n")];
+	$tanggal = date("d");
+	$bulan = date("m");
+	$tahun = date("Y");
 	$mulai 	 = $_GET['awal'];
 	$selesai = $_GET['akhir'];
 	$sql = "SELECT cuti.*, employee.* FROM cuti, employee WHERE cuti.npp=employee.npp
@@ -106,6 +114,19 @@
 				</tbody>
 			</table>
 			<br />
+			<div class="container-fluid">
+			<h3 class="text-right">Pamulang, <?php echo $tanggal." ".$bulan_ini." ".$tahun ?></h3>
+			</div>
+			
+			<img src="libs/images/ttd.png" alt="ttd" align="right" width="200" height="100"></h4>
+			</div>
+
+			<div class="container-fluid">
+			<h3 class="text-right">Selvidora, S.KM</h3>
+			</div>
+			<div class="container-fluid">
+			<h3 class="text-right">Kabag SDM & Umum</h3>
+		</div>
 		</div><!-- /.container -->
 	</section>
 
