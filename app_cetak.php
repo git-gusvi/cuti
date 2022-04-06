@@ -134,7 +134,7 @@
 			<h3 class="text-right">Pamulang, <?php echo $tanggal." ".$bulan_ini." ".$tahun ?></h3>
 			</div>
 			
-			<img src="libs/images/ttd.png" alt="ttd" align="right" width="200" height="100"></h4>
+			<img src="libs/images/ttd.png" alt="ttd" align="right" width="300" height="200"></h4>
 			</div>
 
 			<div class="container-fluid">
